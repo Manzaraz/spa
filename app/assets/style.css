@@ -44,3 +44,27 @@ img {
     color: #eee;
     background-color: #dc3545;
 }
+
+.form-search {
+    margin: auto;
+    text-align: center;
+}
+.form-search input {
+    display: block;
+    margin: auto;
+    padding: .25rem;
+    border-radius: .25rem;
+    font-size: 1rem;
+}
+
+.header {
+    padding: .5rem  ;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    background-color: #fedcba;
+}
+
+.header> * {
+    margin: 1rem auto;
+}
