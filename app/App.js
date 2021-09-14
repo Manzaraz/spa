@@ -1,8 +1,19 @@
 import api from './helpers/wp_api.js'
+import { ajax } from './helpers/ajax.js';
+import { Title } from "./components/Title.js";
+import { Loader } from "./components/Loader.js";
+ 
 
-const d = document;
 
 export function App() {
-    d.getElementById("root").innerHTML = `<h1>Bienvenidos a mi primer SPA con Vanilla JS</h1>`;
-    console.log(api);
+    const d = document, 
+        $root = d.getElementById("root");
+
+    $root.appendChild(Title());
+    $root.appendChild(Loader())
+
+ 
+    
+    
+
 }
