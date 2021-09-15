@@ -12,11 +12,11 @@ export function ajax (props) {
             console.log(err);
             let message = err.statusText || "Ocurrió un error al acceder al API";
 
-            d.getElementById("root").innerHTML = `
+            d.getElementById("main").innerHTML = `
                 <div class="error">
                     <p>Error ${err.status}: ${message}</p>
                 </div>
             `;
-            
+            d.querySelector(".loader").style.display = "none";
         })
 }
