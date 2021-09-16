@@ -1,11 +1,10 @@
 
 export function Main() {
-    const d = document,
-        $main = d.createElement("main");
+    const $main = document.createElement("main");
 
-    $main.id = "posts"
-    $main.classList.add("grid-fluid")
-
-    return $main
+    $main.id = "main";
+    $main.classList.add("grid-fluid");
+    
+    return $main;
 }
 

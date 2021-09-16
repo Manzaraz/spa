@@ -1,9 +1,8 @@
-const d = document;
-
-export function ajax (props) {
+export async function ajax (props) {
+    const d = document;
     let { url, cbSuccess } = props;
 
-    fetch(url)
+    await fetch(url)
         .then((res) => res.ok ? res.json() : Promise.reject(res))
         .then((json) => {
             cbSuccess(json)
