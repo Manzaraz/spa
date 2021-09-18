@@ -36,9 +36,7 @@ export async function InfinitScroll() {
                 url: apiURL,
                 cbSuccess: (posts) => {
                     let html = "";
-                    posts.forEach(el => {
-                        html += Component(el);
-                    });
+                    posts.forEach(el => html += Component(el));
                     d.getElementById("main").insertAdjacentHTML("beforeend", html);
                     d.querySelector(".loader").style.display = "none";
                 }
